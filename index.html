@@ -6,67 +6,132 @@
     <title>Jorams Unit 2 Techdegree Project</title>
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,600" rel="stylesheet">
   </head>
   
   <body>
     
-    <header class="main-header">
-      <h1 class="name">Joram Livengood</h1>
-      <ul class="main-nav">
-        <li>Home</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
-      </ul>
-    </header><!--- Main Header --->
+    <header class="main-header clearfix" id="top">
+      <div class="container">
+        <h1 class="name">Joram Livengood</h1>
+        <nav>
+          <ul class="main-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     
-    <div class="banner">
-      <img src="responsive_layout_v2.0/images/responsive-layout-profile.png"/>
+    <div class="container">
+      <section class="banner clearfix">
+        <img src="images/responsive-layout-profile.png" alt="Profile Image"/>
 
-      <p>My name is Joram! I'm currently learning a lot about web development through the Treehouse Techdegree program, and am looking forward to applying my newly acquired knowledge and skills!</p>
-    </div>
-    
-    <div class="content">
-      <h2>Portfolio</h2>
+        <p>My name is Joram! I'm currently learning a lot about web development through the Treehouse Techdegree program, and am looking forward to applying my newly acquired knowledge and skills!</p>
+      </section>
+
+      <section class="content portfolio clearfix" id="portfolio">
+        <h2>Portfolio</h2>
+
+        <div class="marketing col">
+          <img src="images/portfolio-1.png" alt="Marketing Page"/>
+          <h3>Marketing Page</h3>
+          <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+        </div>
+
+        <div class="search col">
+          <img src="images/portfolio-2.png" alt="Search Page"/>
+          <h3>Search Page</h3>
+          <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+        </div>
+
+        <div class="travel col">
+          <img src="images/portfolio-3.png" alt="Travel App"/>
+          <h3>Travel App</h3>
+          <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+        </div>
+
+        <div class="map col">
+          <img src="images/portfolio-4.png" alt="Map of Favorite Spots"/>
+          <h3>Map of Favorite Spots</h3>
+          <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+        </div>
+
+        <div class="photo col">
+          <img src="images/portfolio-5.png" alt="Photo Gallery"/>
+          <h3>Photo Gallery</h3>
+          <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+        </div>
+
+        <div class="calculator col">
+          <img src="images/portfolio-6.png" alt="Calculator"/>
+          <h3>Calculator</h3>
+          <p>Someone can enter in the numbers the want, and press the big blue button and get the result.</p>
+        </div>
+      </section>
       
-      <img src="responsive_layout_v2.0/images/portfolio-1.png"/>
-      <h3>Marketing Page</h3>
+      <section class="content interests clearfix" id="interests">
+        <h2>Interests</h2>
 
-      <img src="responsive_layout_v2.0/images/portfolio-2.png"/>
-      <h3>Search Page</h3>
+        <div class="wrapper clearfix">
+          <div class="primary">
+            <img src="images/reaperdaw.png" alt="Reaper Digital Audio Workstation"/>
+          </div>
 
-      <img src="responsive_layout_v2.0/images/portfolio-3.png"/>
-      <h3>Travel App</h3>
+          <div class="secondary">
+            <h3>Audio Engineering</h3>
+            <p>The technical art of recording, mixing, and mastering audio has always been a skill I've wanted to make a hobby.</p>
+          </div>
+        </div>
+        
+        <div class="wrapper clearfix">
+          <div class="secondary">
+            <img src="images/27INSTAPOT1-superJumbo.jpg" alt="Stock Photo of Cooking"/>
+          </div>
 
-      <img src="responsive_layout_v2.0/images/portfolio-4.png"/>
-      <h3>Map of Favorite Spots</h3>
+          <div class="primary">
+            <h3>Cooking</h3>
+            <p>I really enjoy cooking, it's just a shame I'm not good at it! But that won't stop me from trying my hardest to impress my girlfriend.</p>
+          </div>
+        </div>
+      
+      <div class="wrapper clearfix">
+          <div class="primary">
+            <img src="images/zombicide.jpg" alt="Zombicide"/>
+          </div>
 
-      <img src="responsive_layout_v2.0/images/portfolio-5.png"/>
-      <h3>Photo Gallery</h3>
+          <div class="secondary">
+            <h3>Board Games</h3>
+            <p>Sometimes a great night off is drinking too much with your friends while you all get annihilated by a swarm of zombies.</p>
+          </div>
+        </div>
+      </section>
 
-      <img src="responsive_layout_v2.0/images/portfolio-6.png"/>
-      <h3>Calculator</h3>
+      <section class="contact" id="contact">
+        <h2>Contact</h2>
+
+        <p>If you would like more information on my projects, skills, or goals, feel free to contact me!</p>
+
+        <p>Phone: <span class="contact-info">+1 (555) 555-555</span></p>
+        <p>Email: <span class="contact-info">joramlivengood@email.com</span></p>
+      </section>
+
+      <footer class="main-footer clearfix">
+        <h1 class="footer-name">Joram Livengood</h1>
+        <ul class="back-to-top">
+          <li><a href="#top">BACK TO TOP</a></li>
+        </ul>
+
+        <ul class="footer-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </footer>
     </div>
-    
-    <div>
-      <h2>Contact</h2>
-
-      <p>If you would like more information on my projects, skills, or goals, feel free to contact me!</p>
-
-      <p>Phone: +1 (555) 555-555</p>
-      <p>Email: joram@joramlivengood.com</p>
-    </div>
-    
-    <footer class="main-footer">
-      <h1 class="footer-name">Joram Livengood</h1>
-      <ul class="back-to-top">
-        <li>Back To Top</li>
-      </ul>
-      <ul class="footer-nav">
-        <li>Home</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
-      </ul>
-    </footer>
     
   </body>
   
